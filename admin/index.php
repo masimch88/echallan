@@ -1,5 +1,5 @@
 <?php
-  include '../functions/logincheckf.php';
+  include 'functions/loginadmf.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

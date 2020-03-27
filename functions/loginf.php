@@ -26,19 +26,19 @@
         echo("Error description: " . mysqli_error($conn));
 
 
-       if(mysqli_num_rows($data)==1)  /*only one account of email*/
+    if(mysqli_num_rows($data)==1)  /*only one account of email*/
+    {
+        if($row['utype_id']==1)
         {
-            if($row['utype_id']==1)
-            {
-                $_SESSION['id']=$row['user_id'];
-                $_SESSION['uname']=$row['uname'];
-                $_SESSION['img']=$row['img'];
-                header("location:../admin/index.php");    /*if true then valid otherwise invalid*/
-                exit();
-            }
+            $_SESSION['admin_id']=$row['user_id'];
+            $_SESSION['uname']=$row['uname'];
+            $_SESSION['img']=$row['img'];
+            header("location:../admin/index.php");    /*if true then valid otherwise invalid*/
+            exit();
+        }
         else if($row['utype_id']==2)
         {
-            $_SESSION['id']=$row['user_id'];
+            $_SESSION['emplyee_id']=$row['user_id'];
             $_SESSION['uname']=$row['uname'];
             header("location:../emp/index.php");    /*if true then valid otherwise invalid*/
             exit();

@@ -16,7 +16,7 @@
         <div class="container">
           <h2>WELCOME TO MUST ECHALLAN PORTAL</h2>
           <h3>3 Simple Steps to do it</h3>
-          <h3>3 Simple Steps to do it</h3>
+          
           <div class="icons">
             <i class="ion-log-in icon-big"></i>
             <i class="ion-ios-keypad icon-big"></i>
