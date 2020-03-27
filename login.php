@@ -1,3 +1,23 @@
+<?php 
+  session_start();
+  if(isset($_SESSION['stu_id']))
+  {
+      header("location:index.php");
+      exit();
+  }
+  if(isset($_SESSION['admin_id']))
+  {
+      header("location:admin/index.php");
+      exit();
+  }
+  if(isset($_SESSION['employee_id']))
+  {
+      header("location:emp/index.php");
+      exit();
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,7 +59,7 @@
       <div class="login">
         <h2>Login here</h2>
         <?php 
-          session_start();
+         
           if(!isset($_SESSION['error']))
             $_SESSION['error']="";
           $a=$_SESSION['error'];
@@ -59,4 +79,4 @@
       </div>
     </main>
   </body>
-</html>
+</html> 

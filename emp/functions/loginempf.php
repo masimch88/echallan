@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if(!isset($_SESSION['emplyee_id']))
+  if(!isset($_SESSION['employee_id']))
   {
       header("location:../login.php");
       exit();
