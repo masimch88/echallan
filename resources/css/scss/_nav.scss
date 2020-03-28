@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: $primary-color;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+  }   
+ 
+

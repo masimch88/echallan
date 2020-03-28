@@ -1,0 +1,145 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-template-areas: "info login";
+    height: 70%;
+    margin: 3%;
+    opacity: 0.9;
+     
+  }
+.info {
+    grid-area: info;
+    background-color: whitesmoke;
+    border-radius: 5%;
+     
+
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    h2{
+        color:$primary-color;
+        font-size: 4rem;
+        margin-top: 5%;
+         
+    }
+    h3 {
+        font-weight: normal;
+        font-size: 4rem;
+        margin-top: 3%;
+         
+      }
+}
+
+.icons {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-right: 5%;
+     
+  }
+  
+.steps {
+    display: flex;
+    align-items: center;
+    width: 100%;
+     
+    h4 {
+        font-size: 5rem;
+        font-weight: normal;
+        margin-left: 15%;
+     }
+     h5 {
+        font-size: 2rem;
+        font-weight: normal;
+      }
+
+  }
+
+.icon-big {
+    font-size: 500%;
+  }
+  
+  .container-logo {
+    width: 100%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+     
+    h1 {
+        color:$primary-color;
+        font-weight: normal;
+        font-size: 7rem;
+      }
+  }
+
+.login {
+    color: white;
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    background:$primary-color;
+    
+    margin-left: 30%;
+    border-radius: 5%;
+    align-items: flex-start;
+     
+    h2 {
+        font-size: 5rem;
+        text-transform: uppercase;
+        margin: 10% auto 5% auto;
+         
+    }
+    form {
+    margin-left: 10%;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+     
+    a {
+        color: white;
+        width: 100%;
+        font-size: 3rem;
+        border-radius: 1rem;
+        text-decoration: none;
+         
+      }
+    } 
+    input[type="email"],
+    input[type="password"] {
+      line-height: 3rem;
+      width: 180%;
+       
+    }
+
+    input[type="submit"] {
+        background-color: $btn-background-clr;
+        color: white;
+        margin: 10% 0% 5% 20%;
+        padding: 3%;
+        width: 150%;
+        border: 1px solid $btn-background-clr;
+        font-size: 3rem;
+        border-radius: 1rem;
+         
+
+        &:hover {
+            background-color: $primary-color;
+          }
+      }
+
+    button {
+    background-color: #11639a;
+    color: white;
+    margin: 10% 0% 5% 20%;
+    padding: 3%;
+    width: 150%;
+    border: 1px solid #11639a;
+    font-size: 3rem;
+    border-radius: 1rem;
+    }
+}

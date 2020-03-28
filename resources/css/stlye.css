@@ -19,25 +19,6 @@ body {
   height: 100vh;
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: #46a5e5;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  overflow: hidden;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-}
-
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,5 +42,199 @@ nav {
 
 .logo a {
   text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #46a5e5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+      grid-template-areas: "info login";
+  height: 70%;
+  margin: 3%;
+  opacity: 0.9;
+}
+
+.info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: info;
+  background-color: whitesmoke;
+  border-radius: 5%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container h2 {
+  color: #46a5e5;
+  font-size: 4rem;
+  margin-top: 5%;
+}
+
+.container h3 {
+  font-weight: normal;
+  font-size: 4rem;
+  margin-top: 3%;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 5%;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.steps h4 {
+  font-size: 5rem;
+  font-weight: normal;
+  margin-left: 15%;
+}
+
+.steps h5 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.icon-big {
+  font-size: 500%;
+}
+
+.container-logo {
+  width: 100%;
+  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-logo h1 {
+  color: #46a5e5;
+  font-weight: normal;
+  font-size: 7rem;
+}
+
+.login {
+  color: white;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: login;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #46a5e5;
+  margin-left: 30%;
+  border-radius: 5%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.login h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin: 10% auto 5% auto;
+}
+
+.login form {
+  margin-left: 10%;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login form a {
+  color: white;
+  width: 100%;
+  font-size: 3rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  line-height: 3rem;
+  width: 180%;
+}
+
+.login input[type="submit"] {
+  background-color: #11639a;
+  color: white;
+  margin: 10% 0% 5% 20%;
+  padding: 3%;
+  width: 150%;
+  border: 1px solid #11639a;
+  font-size: 3rem;
+  border-radius: 1rem;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #46a5e5;
+}
+
+.login button {
+  background-color: #11639a;
+  color: white;
+  margin: 10% 0% 5% 20%;
+  padding: 3%;
+  width: 150%;
+  border: 1px solid #11639a;
+  font-size: 3rem;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=stlye.css.map */
