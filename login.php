@@ -16,6 +16,12 @@
       exit();
       //eeeeeeeeeeeee
   }
+  if(isset($_SESSION['employee_id']))
+  {
+      header("location:emp/index.php");
+      exit();
+      //eeeeeeeeeeeee
+  }
 
 
 
