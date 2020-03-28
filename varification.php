@@ -1,3 +1,6 @@
+<?php
+  include 'functions/logincheckf.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

@@ -1,3 +1,6 @@
+<?php
+  include 'functions/loginempf.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

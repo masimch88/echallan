@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php 
+session_start(); 
+include 'functions/loginadmf.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

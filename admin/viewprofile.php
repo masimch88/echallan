@@ -1,4 +1,7 @@
 <?php
+  include 'functions/loginadmf.php';
+?>
+<?php
   include '../functions/logincheckf.php';
 ?>
 <!DOCTYPE html>
