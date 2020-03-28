@@ -15,11 +15,12 @@
       header("location:emp/index.php");
       exit();
   }
-  if(isset($_SESSION['employee_id']))
+  if(isset($_SESSION['admin_id']))
   {
-      header("location:emp/index.php");
+      header("location:admin/index.php");
       exit();
   }
+ 
 
 ?>
 
