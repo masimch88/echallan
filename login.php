@@ -14,7 +14,10 @@
   {
       header("location:emp/index.php");
       exit();
+      //eeeeeeeeeeeee
   }
+
+
 
 
 ?>
