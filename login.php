@@ -41,19 +41,34 @@
           <h2>WELCOME TO MUST ECHALLAN PORTAL</h2>
           <h3>3 Simple Steps to do it</h3>
           
-          <div class="icons">
-            <i class="ion-log-in icon-big"></i>
-            <i class="ion-ios-keypad icon-big"></i>
-            <i class="ion-cash icon-big"></i>
-          </div>
+        
           <div class="steps">
-            <h4>1</h4>
-            <h5>LOGIN the <br />Account</h5>
+
+            <div class="flex-column">
+              <i class="ion-log-in icon-big"></i>
+              <div class="flex-row">
+                <h4>1</h4>
+                <h5>LOGIN the <br />Account</h5>
+              </div>
+            </div>
+
+            <div class="flex-column">
+            <i class="ion-ios-keypad icon-big"></i>
+            <div class="flex-row">
             <h4>2</h4>
             <h5>Fill the <br />challan</h5>
+          </div>
+          </div>
+
+            <div class="flex-column">
+            <i class="ion-cash icon-big"></i>
+            <div class="flex-row">
             <h4>3</h4>
             <h5>Pay the <br />challan</h5>
-          </div>
+            </div>
+            </div>
+
+</div>
           <div class="container-logo">
             <img src="resources/css/img/logo.png" alt="logo" />
             <h1>MUST ECHALLAN</h1>

@@ -64,20 +64,25 @@ nav {
 }
 
 main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(30%, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-      grid-template-areas: "info login";
-  height: 70%;
-  margin: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 50%;
+  margin: 1%;
   opacity: 0.9;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .info {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: info;
+  width: 700px;
   background-color: whitesmoke;
   border-radius: 5%;
 }
@@ -97,13 +102,13 @@ main {
 
 .container h2 {
   color: #46a5e5;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 5%;
 }
 
 .container h3 {
   font-weight: normal;
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-top: 3%;
 }
 
@@ -116,6 +121,8 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-right: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .steps {
@@ -125,13 +132,14 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 60%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .steps h4 {
   font-size: 5rem;
   font-weight: normal;
-  margin-left: 15%;
 }
 
 .steps h5 {
@@ -162,9 +170,6 @@ main {
 
 .login {
   color: white;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: login;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,7 +178,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #46a5e5;
-  margin-left: 30%;
+  width: 500px;
   border-radius: 5%;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -206,35 +211,33 @@ main {
   text-decoration: none;
 }
 
-.login input[type="email"],
-.login input[type="password"] {
-  line-height: 3rem;
-  width: 180%;
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.login input[type="submit"] {
-  background-color: #11639a;
-  color: white;
-  margin: 10% 0% 5% 20%;
-  padding: 3%;
-  width: 150%;
-  border: 1px solid #11639a;
-  font-size: 3rem;
-  border-radius: 1rem;
-}
-
-.login input[type="submit"]:hover {
-  background-color: #46a5e5;
-}
-
-.login button {
-  background-color: #11639a;
-  color: white;
-  margin: 10% 0% 5% 20%;
-  padding: 3%;
-  width: 150%;
-  border: 1px solid #11639a;
-  font-size: 3rem;
-  border-radius: 1rem;
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=stlye.css.map */
