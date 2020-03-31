@@ -61,6 +61,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 
 main {
@@ -74,7 +75,6 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 50%;
-  margin: 1%;
   opacity: 0.9;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -85,6 +85,7 @@ main {
   width: 700px;
   background-color: whitesmoke;
   border-radius: 5%;
+  margin-top: 5%;
 }
 
 .container {
@@ -102,14 +103,22 @@ main {
 
 .container h2 {
   color: #46a5e5;
-  font-size: 3rem;
+  font-size: 350%;
   margin-top: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .container h3 {
   font-weight: normal;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-top: 3%;
+  margin-bottom: 5%;
 }
 
 .icons {
@@ -135,6 +144,11 @@ main {
   width: 60%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .steps h4 {
@@ -147,25 +161,37 @@ main {
   font-weight: normal;
 }
 
+.steps i {
+  margin-left: 20%;
+}
+
 .icon-big {
   font-size: 500%;
 }
 
 .container-logo {
   width: 100%;
-  margin: 5%;
+  margin: 8% 5% 5% 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container-logo h1 {
   color: #46a5e5;
   font-weight: normal;
-  font-size: 7rem;
+  font-size: 400%;
+}
+
+.container-logo img {
+  height: 10%;
+  width: 10%;
 }
 
 .login {
@@ -179,6 +205,7 @@ main {
           flex-direction: column;
   background: #46a5e5;
   width: 500px;
+  margin-top: 5%;
   border-radius: 5%;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -186,14 +213,14 @@ main {
 }
 
 .login h2 {
-  font-size: 5rem;
+  font-size: 400%;
   text-transform: uppercase;
   margin: 10% auto 5% auto;
 }
 
 .login form {
   margin-left: 10%;
-  font-size: 3rem;
+  font-size: 300%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,6 +228,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 80%;
 }
 
 .login form a {
@@ -209,6 +237,39 @@ main {
   font-size: 3rem;
   border-radius: 1rem;
   text-decoration: none;
+}
+
+.login form input[type="email"],
+.login form input[type="password"] {
+  line-height: 3rem;
+}
+
+.login form input[type="submit"] {
+  background-color: #11639a;
+  color: white;
+  margin: 10% 0% 0% 0%;
+  padding: 3%;
+  border: 1px solid #11639a;
+  font-size: 3rem;
+  border-radius: 1rem;
+}
+
+.login form input[type="submit"]:hover {
+  background-color: #46a5e5;
+}
+
+.login form button {
+  background-color: #11639a;
+  color: white;
+  margin: 10% 0% 5% 0%;
+  padding: 3%;
+  border: 1px solid #11639a;
+  font-size: 3rem;
+  border-radius: 1rem;
+}
+
+.login form button:hover {
+  background-color: #46a5e5;
 }
 
 .flex-row {
