@@ -152,17 +152,17 @@ main {
 }
 
 .steps h4 {
-  font-size: 5rem;
+  font-size: 400%;
   font-weight: normal;
 }
 
 .steps h5 {
-  font-size: 2rem;
+  font-size: 200%;
   font-weight: normal;
 }
 
 .steps i {
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 .icon-big {
