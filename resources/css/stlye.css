@@ -300,5 +300,122 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main {
+  background-color: white;
+  height: 100vh;
+  width: 80%;
+}
+
+.main button {
+  background-color: #11639a;
+  border: 1px solid #11639a;
+  color: white;
+  font-size: 2rem;
+  border-radius: 20rem;
+  padding: 1rem;
+}
+
+.main button a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 35%;
+  list-style-type: none;
+}
+
+.nav-links img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  margin-left: 40%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-weight: normal;
+  margin-left: 1rem;
+}
+
+.nav-links i {
+  font-size: 350%;
+  color: white;
+  margin-left: 80%;
+}
+
+.nav-links a:hover {
+  color: #11639a;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 5px auto;
+  text-transform: uppercase;
+  width: 70%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #46a5e5;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.content-table th {
+  font-size: 1.5rem;
+}
+
+.content-table td {
+  font-size: 1.5rem;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #46a5e5;
 }
 /*# sourceMappingURL=stlye.css.map */
