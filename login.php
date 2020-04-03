@@ -31,7 +31,7 @@
             <img src="resources/css/img/logo.png" alt="logo" />
             <h1>MUST ECHALLAN</h1>
         </div>
-    </nav>
+      </nav>
     <main>
       <div class="info">
         <div class="container">

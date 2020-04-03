@@ -9,6 +9,77 @@ nav {
     position: sticky;
     top: 0px;
     z-index: 1;
-  }   
- 
+  } 
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    list-style-type: none;
+    img {
+      height: 50px;
+      width: auto;
+      border-radius: 50%;
+      margin-left: 40%;
+    }
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: white;
+      font-weight: normal;
+      margin-left: 1rem;
+
+      &:hover {
+        color: #11639a;
+      }
+     
+    }
+    i {
+      font-size: 350%;
+      color: white;
+      margin-left: 80%;
+    }
+  }
+  .burger{
+    display: none;
+    cursor: pointer;
+  }
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+  }
+
+  @media screen and (max-width:1824px)   /*tablet zone*/
+  {
+   .nav-links{
+     width: 66%;
+    }
+  }
+  @media screen and (max-width:768px)
+  { 
+    body{
+      overflow-x:hidden;
+    }
+    .nav-links{
+      position: absolute;
+      right: 0px;
+      height:92vh;
+      top: 8vh;
+      background: $primary-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:50%;
+      transform: translateX(100%);
+         }
+         .nav-links a{
+           opacity: 0;
+         }
+         .burger{
+         display: block;
+        }
+     
+  }
 
