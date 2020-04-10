@@ -86,6 +86,6 @@
               </table>
           </div>
       </div>
-    
+      <script src="pageparts/app.js"></script>
 </body>
 </html>

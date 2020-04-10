@@ -64,7 +64,6 @@
             <h5>Pay the <br />challan</h5>
             </div>
             </div>
-
 </div>
           <div class="container-logo">
             <img src="resources/css/img/logo.png" alt="logo" />
